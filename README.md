@@ -1,7 +1,7 @@
 # 💂‍ Uniform
 ## By Genericmilk
 
-A super small (14 lines!) script that makes your DOM elements resize to the height of the biggest
+A super small (13 lines!) script that makes your DOM elements resize to the height of the biggest
 
 When you have a row of elements such as cards that may vary in content height (Such as one card having a different height to the other), this plugin will help you set the heights on all of these elements to the tallest so they appear uniform on the page
 
