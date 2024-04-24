@@ -1,9 +1,13 @@
-var Uniform = {
-    Boot:function(){
-        var b=0;
-        $( "*[data-uniform=true]" ).each(function() {
-            b = $(this).height()>b ? $(this).height() : b;
+let uniform = {
+    boot: function() {
+        var b = 0;
+        var elements = document.querySelectorAll('*[data-uniform=true]');
+        elements.forEach(function(element) {
+            b = element.offsetHeight > b ? element.offsetHeight : b;
         });
-        $( "*[data-uniform=true]" ).height(b);
+        elements.forEach(function(element) {
+            element.style.height = b + 'px';
+        });
     }
-};Uniform.Boot();
+};
+uniform.boot();
